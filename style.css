@@ -1,0 +1,135 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #08d9d6;
+}
+
+.mode-btn,
+.refresh-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #f54291;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.mode-btn:hover,
+.refresh-btn:hover {
+    background-color: #ff8aae;
+}
+
+.mode-btn.ai-mode {
+    background-color: #2ecc71; /* Change button color in AI mode */
+}
+
+/* Refresh Button Styling */
+.refresh-btn {
+    background-color: #3498db;
+    margin-left: 10px;
+}
+
+.refresh-btn:hover {
+    background-color: #5dade2;
+}
+
+/* Turn Container */
+.turn-container {
+    margin: 20px 0;
+    position: relative;
+}
+
+.turn-box {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 18px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+.turn-container .bg {
+    position: absolute;
+    width: 85px;
+    height: 40px;
+    background-color: #08d9d6;
+    border-radius: 5px;
+    transition: left 0.3s;
+    top: 10px;
+    left: 0;
+}
+
+/* Game Grid */
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    font-size: 24px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.box:hover {
+    background-color: #08d9d6;
+    color: #000;
+}
+
+/* Results Message */
+#results {
+    font-size: 18px;
+    margin: 20px;
+    color: #f54291;
+}
+
+#results.thinking {
+    color: #2ecc71; /* AI thinking message color */
+}
+
+/* Play Again Button */
+#play-again {
+    display: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #08d9d6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#play-again:hover {
+    background-color: #2ecc71;
+}
